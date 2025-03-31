@@ -28,7 +28,7 @@ export const routes: Routes = [
     },
     {
         path: 'settings',
-        loadChildren: () => import('./settings/profile/profile.component').then(m => m.ProfileComponent)
+        loadComponent: () => import('./settings/profile/profile.component').then(m => m.ProfileComponent)
     },
     {
         path: 'theme',
