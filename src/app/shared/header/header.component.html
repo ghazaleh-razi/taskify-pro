@@ -1,0 +1,18 @@
+<header class="header">
+  <div class="logo">
+    <span>Task Manager</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#">Dashboard</a>
+    <a href="#">Tasks</a>
+    <a href="#">Settings</a>
+  </nav>
+
+  <div class="actions">
+    <button (click)="toggleTheme()" class="theme-toggle">
+      {{ theme() === "light" ? "🌞" : "🌙" }}
+    </button>
+    <div class="avatar"></div>
+  </div>
+</header>

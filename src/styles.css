@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #3b82f6;
+    --background-color: #ffffff;
+    --text-color: #333333;
+}
+
+[data-theme-dark = "dark"] {
+    --primary-color: #3b82f6;
+    --background-color: #1e1e1e;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
